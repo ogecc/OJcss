@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OJcss &mdash; A pixelated CSS stylesheet</title>
+  <meta name="description" content="OJcss is a minimal pixelated black & green CSS stylesheet for semantic HTML." />
+  <link rel="stylesheet" href="./ojcss.css" />
+</head>
+<body>
+
+  <!-- ============================
+       Header / Nav
+       ============================ -->
+  <header>
+    <nav>
+      <h2 class="glitch" data-text="OJcss">OJcss</h2>
+      <a href="https://github.com/ogecc/OJcss">GitHub</a>
+      <a href="#installation">Install</a>
+      <a href="#typography">Docs</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================
+         Hero / Intro
+         ============================ -->
+    <section>
+      <h1 class="text-gradient">Press start to begin<span class="blink">_</span></h1>
+      <p>
+        <strong>OJcss</strong> is a minimal pixelated CSS stylesheet &mdash; black &amp; green,
+        no JavaScript, no build step. Drop one file into your project and every
+        semantic HTML element gets a retro 8-bit / terminal makeover.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Installation
+         ============================ -->
+    <section id="installation">
+      <h2>Installation</h2>
+
+      <h4>1. Download</h4>
+      <p>Grab <code>ojcss.css</code> from the repo and link it:</p>
+<pre><code>&lt;link rel="stylesheet" href="ojcss.css"&gt;</code></pre>
+
+      <h4>2. CDN (jsDelivr)</h4>
+<pre><code>&lt;link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/ogecc/OJcss@main/ojcss.css"&gt;</code></pre>
+
+      <h4>3. NPM</h4>
+      <p><em>Coming soon.</em></p>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Typography
+         ============================ -->
+    <section id="typography">
+      <h2>Typography</h2>
+
+      <h1>Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <h4>Heading Four</h4>
+      <h5>Heading Five</h5>
+      <h6>Heading Six</h6>
+
+      <p>
+        A paragraph with a <a href="#">link</a>, <strong>strong text</strong>,
+        <em>emphasised text</em>, <mark>highlighted text</mark>, an
+        <abbr title="HyperText Markup Language">HTML</abbr> abbreviation,
+        some <code>inline code</code>, a <kbd>Ctrl</kbd>+<kbd>C</kbd>
+        keyboard shortcut, output like <samp>ERR_NOT_FOUND</samp>, and
+        a <var>variable</var> reference.
+      </p>
+
+      <p>
+        H<sub>2</sub>O has subscript. E = mc<sup>2</sup> has superscript.
+        <del>Old text</del> <ins>new text</ins>.
+      </p>
+
+<pre><code>// Block of code
+function greet(name) {
+  return "GREETINGS, " + name.toUpperCase();
+}
+greet("player one");</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Quotes & address
+         ============================ -->
+    <section>
+      <h2>Quotes &amp; Address</h2>
+
+      <blockquote>
+        &ldquo;It's dangerous to go alone! Take this.&rdquo;
+        <br />&mdash; Old Man, 1986
+      </blockquote>
+
+      <address>
+        Castle Greenscreen<br />
+        1 Pixel Lane<br />
+        Hyrule
+      </address>
+
+      <aside>
+        <strong>Aside:</strong> sidebars, asides, and tangents live here.
+      </aside>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Lists
+         ============================ -->
+    <section>
+      <h2>Lists</h2>
+
+      <h4>Unordered</h4>
+      <ul>
+        <li>Sword</li>
+        <li>Shield</li>
+        <li>Health potion</li>
+        <li>Mystery key</li>
+      </ul>
+
+      <h4>Ordered</h4>
+      <ol>
+        <li>Wake up in tutorial cave</li>
+        <li>Defeat first slime</li>
+        <li>Find town</li>
+        <li>Save the world</li>
+      </ol>
+
+      <h4>Description</h4>
+      <dl>
+        <dt>HP</dt>
+        <dd>Hit points &mdash; how much damage you can take.</dd>
+        <dt>MP</dt>
+        <dd>Magic points &mdash; fuel for spells.</dd>
+        <dt>EXP</dt>
+        <dd>Experience &mdash; needed to level up.</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Media
+         ============================ -->
+    <section>
+      <h2>Media</h2>
+
+      <h4>Image</h4>
+      <figure>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="160" height="160" style="display:block;margin:0 auto;image-rendering:pixelated;">
+          <rect width="16" height="16" fill="#0a0e0a"/>
+          <g fill="#00ff41">
+            <rect x="6" y="2" width="4" height="1"/>
+            <rect x="5" y="3" width="6" height="1"/>
+            <rect x="4" y="4" width="8" height="3"/>
+            <rect x="3" y="7" width="10" height="1"/>
+            <rect x="2" y="8" width="12" height="2"/>
+            <rect x="3" y="10" width="10" height="1"/>
+            <rect x="4" y="11" width="2" height="3"/>
+            <rect x="10" y="11" width="2" height="3"/>
+          </g>
+          <g fill="#0a0e0a">
+            <rect x="6" y="5" width="1" height="1"/>
+            <rect x="9" y="5" width="1" height="1"/>
+          </g>
+        </svg>
+        <figcaption>Fig. 1 &mdash; A pixel hero, drawn inline in SVG.</figcaption>
+      </figure>
+      <p>
+        Drop a real image into <code>./media/</code> and reference it like this:
+      </p>
+<pre><code>&lt;img src="./media/your-image.png" alt="description" /&gt;</code></pre>
+
+      <img src="./media/your-image.jpg" alt="description" />
+
+
+
+      <h4>Video</h4>
+      <p>Same idea for video:</p>
+<pre><code>&lt;video controls poster="./media/poster.jpg" src="./media/your-clip.mp4"&gt;&lt;/video&gt;</code></pre>
+      
+      <video controls poster="./media/poster.jpg" src="./media/your-clip.mp4"></video>
+    
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Tables
+         ============================ -->
+    <section>
+      <h2>Tables</h2>
+      <table>
+        <caption>Classic NES titles</caption>
+        <thead>
+          <tr>
+            <th>Game</th>
+            <th>Year</th>
+            <th>Publisher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Super Mario Bros.</td><td>1985</td><td>Nintendo</td></tr>
+          <tr><td>The Legend of Zelda</td><td>1986</td><td>Nintendo</td></tr>
+          <tr><td>Mega Man 2</td><td>1988</td><td>Capcom</td></tr>
+          <tr><td>Contra</td><td>1988</td><td>Konami</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Source: pixelated memory</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Forms
+         ============================ -->
+    <section>
+      <h2>Forms</h2>
+
+      <form>
+        <fieldset>
+          <legend>Player Profile</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name..." />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="hero@email.com" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="********" />
+
+          <label for="level">Level</label>
+          <input type="number" id="level" min="1" max="99" value="1" />
+
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" />
+
+          <label for="class">Class</label>
+          <select id="class">
+            <optgroup label="Melee">
+              <option>Warrior</option>
+              <option>Paladin</option>
+            </optgroup>
+            <optgroup label="Ranged">
+              <option>Archer</option>
+              <option>Mage</option>
+            </optgroup>
+          </select>
+
+          <label for="weapon">Weapon</label>
+          <input list="weapons" id="weapon" placeholder="Pick a weapon..." />
+          <datalist id="weapons">
+            <option value="Sword"></option>
+            <option value="Bow"></option>
+            <option value="Staff"></option>
+            <option value="Dagger"></option>
+          </datalist>
+
+          <label for="bio">Bio</label>
+          <textarea id="bio" placeholder="Tell us your story..."></textarea>
+
+          <label for="color">Banner color</label>
+          <input type="color" id="color" value="#00ff41" />
+
+          <label for="volume">Volume</label>
+          <input type="range" id="volume" min="0" max="100" value="50" />
+
+          <label for="avatar">Avatar</label>
+          <input type="file" id="avatar" />
+
+          <p>
+            <input type="checkbox" id="terms" />
+            <label for="terms">I accept the quest</label>
+          </p>
+
+          <p>
+            <strong>Difficulty:</strong><br />
+            <input type="radio" name="diff" id="easy" /> <label for="easy">Easy</label>
+            <input type="radio" name="diff" id="normal" checked /> <label for="normal">Normal</label>
+            <input type="radio" name="diff" id="hard" /> <label for="hard">Hard</label>
+          </p>
+
+          <button type="submit">Start Game</button>
+          <button type="reset">Reset</button>
+          <button type="button" disabled>Locked</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Interactive
+         ============================ -->
+    <section>
+      <h2>Interactive</h2>
+
+      <details>
+        <summary>What is OJcss?</summary>
+        <p>A minimal pixelated CSS stylesheet for semantic HTML. Drop it in and go.</p>
+      </details>
+
+      <details open>
+        <summary>How do I customize it?</summary>
+        <p>Override the CSS variables defined on <code>:root</code>. See the README.</p>
+      </details>
+
+      <h4>Progress &mdash; quest completion</h4>
+      <progress value="70" max="100">70%</progress>
+
+      <h4>Meter &mdash; HP</h4>
+      <meter value="0.6" min="0" max="1" low="0.3" high="0.7" optimum="1">60%</meter>
+
+      <h4>Dialog</h4>
+      <p>The native <code>&lt;dialog&gt;</code> element, themed. Open this one inline:</p>
+      <dialog open>
+        <h4>Inventory full</h4>
+        <p>Drop something to make space, hero.</p>
+        <form method="dialog"><button>OK</button></form>
+      </dialog>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Alerts & badges
+         ============================ -->
+    <section>
+      <h2>Alerts &amp; Badges</h2>
+
+      <h4>Alerts</h4>
+      <div class="alert">Default alert &mdash; system message goes here.</div>
+      <div class="alert alert-info">Info: a new patch is available.</div>
+      <div class="alert alert-success">Success: quest complete!</div>
+      <div class="alert alert-warning">Warning: low health.</div>
+      <div class="alert alert-error">Error: connection lost.</div>
+
+      <h4>Badges</h4>
+      <p>
+        Status: <span class="badge">NEW</span>
+        <span class="badge badge-success">v1.0</span>
+        <span class="badge badge-warning">BETA</span>
+        <span class="badge badge-error">BROKEN</span>
+        <span class="badge badge-outline">OUTLINE</span>
+      </p>
+
+      <h4>Loader</h4>
+      <p>Loading game data <span class="loader"></span></p>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Inline elements
+         ============================ -->
+    <section>
+      <h2>Inline elements</h2>
+      <p>
+        Released on <time datetime="1986-02-21">21 Feb 1986</time> &mdash;
+        <q>It's dangerous to go alone</q> &mdash; <cite>Old Man</cite>.
+        A <dfn>boss</dfn> is a stronger-than-normal enemy at the end of a level.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Custom components
+         ============================ -->
+    <section>
+      <h2>Custom Components</h2>
+
+      <div class="card">
+        <h4>Plain Card</h4>
+        <p>A bordered, shadowed block. Use it to group anything.</p>
+      </div>
+
+      <a href="#" class="card card-button card-button-primary">
+        <h4>Primary Card Button</h4>
+        <p>This whole card is clickable.</p>
+      </a>
+
+      <a href="#" class="card card-button card-button-secondary">
+        <h4>Secondary Card Button</h4>
+        <p>Outlined variant with a hover lift.</p>
+      </a>
+
+      <p>
+        Or a regular link styled like a button:
+        <a href="#" class="link-button">Press A</a>
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- ============================
+         Flourishes
+         ============================ -->
+    <section>
+      <h2>Flourishes</h2>
+
+      <h4>Blinking cursor</h4>
+      <p>Loading<span class="blink">...</span></p>
+
+      <h4>Glitch text</h4>
+      <p><span class="glitch" data-text="SYSTEM FAILURE">SYSTEM FAILURE</span></p>
+
+      <h4>CRT scanlines</h4>
+      <div class="card scanlines">
+        <h4>Behind glass</h4>
+        <p>This card has a CRT scanline overlay. Wrap any element with the
+          <code>.scanlines</code> class for instant retro-monitor vibes.</p>
+      </div>
+
+      <h4>Pixel border</h4>
+      <div class="pixel-border">
+        Decorative chunky border drawn entirely with stacked box-shadows.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      OJcss &mdash; MIT License &mdash;
+      <a href="https://github.com/ogecc/OJcss">GitHub</a>
+    </p>
+    <p><small>Built with <span class="blink">&lt;3</span></small></p>
+  </footer>
+
+</body>
+</html>
