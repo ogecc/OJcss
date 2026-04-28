@@ -63,6 +63,9 @@
     --shadow-color: #99cc99;
     --selection-bg: #002b0a;
     --selection-fg: #f0fff0;
+
+    --success: #1a6e00;
+    --warning: #7a5200;
   }
 }
 
@@ -83,6 +86,9 @@
   --shadow-color: #99cc99;
   --selection-bg: #002b0a;
   --selection-fg: #f0fff0;
+
+  --success: #1a6e00;
+  --warning: #7a5200;
 }
 
 [data-theme="dark"] {
