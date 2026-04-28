@@ -46,7 +46,7 @@
    2. Light mode overrides
    --------------------------------------------------------- */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --bg-primary: #f0fff0;
     --bg-secondary: #d8f0d8;
     --bg-muted: #c4e4c4;
@@ -64,6 +64,44 @@
     --selection-bg: #002b0a;
     --selection-fg: #f0fff0;
   }
+}
+
+[data-theme="light"] {
+  --bg-primary: #f0fff0;
+  --bg-secondary: #d8f0d8;
+  --bg-muted: #c4e4c4;
+
+  --text-primary: #002b0a;
+  --text-muted: #2a5a2a;
+  --text-inverse: #f0fff0;
+
+  --accent: #006414;
+  --border: #002b0a;
+  --link: #006414;
+  --link-hover: #00a020;
+
+  --shadow-color: #99cc99;
+  --selection-bg: #002b0a;
+  --selection-fg: #f0fff0;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0e0a;
+  --bg-secondary: #111811;
+  --bg-muted: #1a241a;
+
+  --text-primary: #00ff41;
+  --text-muted: #4a8a4a;
+  --text-inverse: #0a0e0a;
+
+  --accent: #aaffaa;
+  --border: #00ff41;
+  --link: #5fff7f;
+  --link-hover: #aaffaa;
+
+  --shadow-color: #003b0f;
+  --selection-bg: #00ff41;
+  --selection-fg: #0a0e0a;
 }
 
 /* ---------------------------------------------------------

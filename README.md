@@ -8,7 +8,7 @@ Inspired by [fanta.css](https://github.com/jamezmca/fantacss).
 
 ## Demo
 
-Open [`index.html`](./index.html) in a browser to see every styled element.
+Open [`index.html`](./index.html) in a browser to see every styled element. The demo page includes a `[ LIGHT ] / [ DARK ]` toggle button (powered by `theme.js`) that overrides the OS color scheme and saves your preference to `localStorage`.
 
 ## Features
 
@@ -39,8 +39,6 @@ Copy [`ojcss.css`](./ojcss.css) into your project and link it:
 <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/ogecc/OJcss@main/ojcss.css">
 ```
-
-> Replace `<your-username>` with your GitHub username after pushing the repo.
 
 ### NPM
 
